@@ -290,4 +290,10 @@ $('.sidenav a').click(function () {
     return false;
 });
 
+$('.sidnav a').click(function () {
+  var href = $(this).attr('href');
+  var section = href.replace('#', '');
+  $('html, body').animate({ scrollTop: $(section).offset().top }, 1500);
+});
+
 </script>
