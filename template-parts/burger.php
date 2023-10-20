@@ -283,17 +283,17 @@ function scrollToAnchor(id) {
 }
 
 $('.sidenav a').click(function () {
-    var href = $(this).attr('href');
-    var anchor = $(href).offset();
-    $('body, html').animate({ scrollTop: anchor.top }, 1500);
-    $('#mySidenav').removeClass('active');
-    return false;
-});
-
-$('.sidnav a').click(function () {
   var href = $(this).attr('href');
-  var section = href.replace('#', '');
-  $('html, body').animate({ scrollTop: $(section).offset().top }, 1500);
+  var section = ('#','');
+
+  // Fermer le menu
+  $('#mySidenav').removeClass('active');
+
+  // Rediriger vers la section spécifiée
+  scrollToAnchor(section);
+
+  // Empêcher le lien par défaut
+  return false;
 });
 
 </script>
