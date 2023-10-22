@@ -10,7 +10,7 @@
 
  /* Mise en place des rotations florales */
 
- .story h2::after, #studio h2::before, #studio h2::after, .site-footer ul::after {
+ .story h2::after, #studio h2::before, #studio h2::after, .site-footer ul::after, .story__article::after {
   animation: spin 5s linear infinite;
 }
 @keyframes spin {
