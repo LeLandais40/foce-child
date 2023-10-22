@@ -30,3 +30,29 @@ var scene = new ScrollMagic.Scene({
 })
 .setTween(tween)
 .addTo(controller);
+
+
+
+/* Mise en place des titres */
+
+window.addEventListener('DOMContentLoaded', function() {
+  var words = document.querySelectorAll('.word');
+
+  words.forEach(function(word, index) {
+    word.style.animationDelay = (index * 0.5) + 's';
+  });
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = 'running';
+      } else {
+        entry.target.style.animationPlayState = 'paused';
+      }
+    });
+  });
+
+  words.forEach(function(word) {
+    observer.observe(word);
+  });
+});

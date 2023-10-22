@@ -1,4 +1,3 @@
-
 <swiper-container class="mySwiper" effect="coverflow" grab-cursor="true" centered-slides="true"
     slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="0" coverflow-effect-depth="100"
     coverflow-effect-modifier="1" coverflow-effect-slide-shadows="false">
@@ -21,7 +20,7 @@
   </swiper-container>
 
   <style>
-    html, body {
+html, body {
 	 position: relative;
 	 height: 100%;
 }
@@ -58,15 +57,13 @@
 	 font-size: 16px;
 	 font-weight: bold;
 }
+/* Mise en place du Caroussel */
+ .story #characters .other-characters {
+	 display: flex !important;
+	 flex-wrap: nowrap !important;
+}
  
   </style>
-
-<?php
-$images = array(
-    array('src' => 'wp-content/uploads/2022/06/Kawaneko.png', 'alt' => 'Kawaneko', 'name' => 'Kawaneko'),
-    // Ajoutez vos autres images ici
-);
-?>
 
   <script>
   var swiper = new Swiper('.mySwiper', {
