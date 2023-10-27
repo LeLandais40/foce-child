@@ -40,7 +40,6 @@
 
 
 <style>
-
 .perso {
 	 margin-left: 100px;
 }
@@ -51,78 +50,6 @@
 	 font-size: 40px;
 	 text-decoration: none;
 	 background-color: #ffd5a2;
-}
- .orchid, .chatviolet, .sunflower {
-	 display: inline-block;
-}
- .orchid, .chatviolet {
-	 float: left;
-}
- .orchid {
-	 position: absolute;
-	 width: 172.57px;
-	 height: 168.24px;
-	 bottom: 152px;
-	 left: -59px;
-}
- .chatviolet {
-	 position: fixed;
-	 width: 110px;
-	 height: 99px;
-	 top: 200px;
-	 left: 450px;
-}
- .sunflower {
-	 position: inherit;
-	 float: right;
-	 width: 216px;
-	 height: 216px;
-	 bottom: 80px;
-	 right: 250px;
-}
- .flower, .randomflower {
-	 display: inline-block;
-}
- .flower {
-	 float: left;
-	 width: 70.76px;
-	 height: 70.76px;
-	 top: 500px;
-	 left: 260px;
-	 border: 0.9px;
-	 position: fixed;
-}
- .randomflower {
-	 position: inherit;
-	 float: right;
-	 width: 80px;
-	 height: 80px;
-	 left: 30px;
-}
- .chatgris {
-	 position: inherit;
-	 width: 155px;
-	 height: 155px;
-	 right: 250px;
-}
- .chatorange {
-	 position: fixed;
-	 float: left;
-	 width: 105.91px;
-	 height: 95.65px;
-	 top: 827.95px;
-	 left: 79px;
-}
- .hibiscus {
-	 right: -300px;
-	 top: 100px;
-	 position: absolute;
-	 height: 626px;
-	 width: 626px;
-}
- .orchide {
-	 text-align: center;
-	 margin-left: 220px;
 }
  .logomenu {
 	 width: 10%;
@@ -194,7 +121,6 @@
  .main-navigation a {
 	 text-align: center;
 	 width: 100%;
-	 font-size: 40px;
 }
  .main-navigation ul {
 	 height: 70%;
@@ -218,21 +144,7 @@
 	 justify-content: space-around;
 	 padding-top: 250px;
 }
- .orchid, .sunflower, .flower, .randomflower, .hibiscus {
-	 animation: spin 5s linear infinite;
-}
- @keyframes spin {
-	 0% {
-		 transform: rotate(0deg);
-	}
-	 100% {
-		 transform: rotate(360deg);
-	}
-}
- .chatviolet, .chatorange, .chatgris {
-	 animation: float 4s ease-in-out infinite;
-}
-
+ 
 a.orchide {
   href: #story;
 }
@@ -249,13 +161,237 @@ a.hibiscus {
   href: #studio;
 }
 
- 
-</style>
+/* Media query pour les appareils mobiles */
+@media (min-width: 768px) {
+	.orchid, .sunflower, .flower, .randomflower, .hibiscus {
+	 animation: spin 5s linear infinite;
+}
+ @keyframes spin {
+	 0% {
+		 transform: rotate(0deg);
+	}
+	 100% {
+		 transform: rotate(360deg);
+	}
+}
+ .chatviolet, .chatorange, .chatgris {
+	 animation: float 4s ease-in-out infinite;
+}
 
+.orchid, .chatviolet, .sunflower {
+	 display: inline-block;
+}
+ .orchid, .chatviolet {
+	 float: left;
+}
+ .orchid {
+	 position: absolute;
+	 width: 172.57px;
+	 height: 168.24px;
+	 bottom: 152px;
+	 left: -59px;
+}
+ .chatviolet {
+	 position: fixed;
+	 width: 110px;
+	 height: 99px;
+	 top: 200px;
+	 left: 450px;
+}
+ .sunflower {
+	 position: inherit;
+	 float: right;
+	 width: 216px;
+	 height: 216px;
+	 bottom: 80px;
+	 right: 250px;
+}
+ .flower, .randomflower {
+	 display: inline-block;
+}
+ .flower {
+	 float: left;
+	 width: 70.76px;
+	 height: 70.76px;
+	 top: 500px;
+	 left: 260px;
+	 border: 0.9px;
+	 position: fixed;
+}
+ .randomflower {
+	 position: inherit;
+	 float: right;
+	 width: 80px;
+	 height: 80px;
+	 left: 30px;
+}
+ .chatgris {
+	 position: inherit;
+	 width: 155px;
+	 height: 155px;
+	 right: 250px;
+}
+ .chatorange {
+	 position: fixed;
+	 float: left;
+	 width: 105.91px;
+	 height: 95.65px;
+	 top: 827.95px;
+	 left: 79px;
+}
+ .hibiscus {
+	 right: -300px;
+	 top: 100px;
+	 position: absolute;
+	 height: 626px;
+	 width: 626px;
+}
+ .orchide {
+	 text-align: center;
+	 margin-left: 220px;
+}
+}
+
+@media (max-width: 768px) {
+  .titresite {
+    font-size: 20px;
+  }
+
+  h2 , h3 {
+	display: flex;
+	justify-content: center;
+	background-color: transparent;
+	font-size: 25px;
+  }
+
+  .sidenav a {
+	font-size: 20px;
+}
+
+  a#closeBtn {
+    width: 25%;
+    text-align: center;
+  }
+
+  a#openBtn {
+    width: 15%;
+    margin: 0 auto;
+  }
+
+  .logomenu {
+	width: 30%;
+	bottom: 50px;
+	position: relative;
+  }
+
+  ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+  }
+
+  li {
+	width: 100%;
+	margin-bottom: 10px;
+  }
+
+  img {
+	max-width: 100%;
+  }
+
+  a {
+	font-size: 20px;
+  }
+
+  a.orchide {
+	position: absolute;
+	right:10px;
+	font-size: 50px;
+  }
+
+  a.perso {
+	position: relative;
+	right: 55px;
+	font-size: 50px;
+	top: 20px;
+  }
+
+  a.place {
+	position: relative;
+	right: 90px;
+	font-size: 50px;
+  }
+
+  a.studio {
+	position: relative;
+	right: 10px;
+	font-size: 50px;
+  }
+
+  .titlemenu {
+	text-align: center;
+  }
+	.orchid {
+		display: none;
+	}
+	.chatviolet {
+		display: none;
+	}
+	.sunflower {
+		display:none;
+	}
+	.chatgris {
+		display: none;
+	}
+	.flower {
+		display: none;
+	}
+	.chatorange {
+		display: none;
+	}
+	.hibiscus {
+		display: none;
+	}
+	.randomflower {
+		display: none;
+	}
+}
+
+@media (width: 1024px) {
+	.chatviolet {
+		left: 250px;
+	}
+	.sunflower {
+		right: 50px;
+	}
+	.sidenav a {
+		font-size: 40px;
+	}
+	.sidenav .close {
+		position: relative;
+		right: 50px;
+	}
+}
+
+@media (max-width: 375px) {
+  a.orchide {
+	font-size: 30px;
+  }
+  a.perso {
+	font-size: 30px;
+  }
+  a.place {
+	font-size: 30px;
+  }
+  a.studio {
+	font-size: 30px;
+  }
+}
+</style>
 <script>
 
 /* Menu hamburger */
-
 var sidenav = document.getElementById("mySidenav");
 var openBtn = document.getElementById("openBtn");
 var closeBtn = document.getElementById("closeBtn");
@@ -297,5 +433,4 @@ $('.sidenav a').click(function () {
   // Empêcher le lien par défaut
   return false;
 });
-
 </script>

@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*
+ Theme Name:  Fleurs d'orangers et chats errants - Oscars Short
+ Theme URI: https://www.koukaki.local
+ Author: Studio Koukaki
+ Author URI: https://www.koukaki.local
+ Template: foce
+ Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
+ Version: 0.1
+ */
+/* Mise en place des rotations florales */
+.story,
+#studio h2,
+.site-footer ul::after,
+.story__article::after {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Mise en place des titres */
+.word {
+  opacity: 0;
+  display: inline-block;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  animation-duration: 1s;
+}
+
+.fadeInUp.one {
+  animation-delay: 0.3s;
+}
+
+.fadeInUp.two {
+  animation-delay: 0.6s;
+}
+
+/* Mise en place des nuages */
+#place {
+  background-image: url("./images/Studio_Koukaki-image_place.png") !important;
+  background-size: cover;
+}
+
+#animatedImage,
+#animatedImage.animationimage2 {
+  position: absolute;
+  width: 20%;
+  filter: blur(10px);
+}
+
+#animatedImage {
+  margin-top: 80px;
+  right: 50px;
+}
+
+#animatedImage.animationimage2 {
+  width: 9%;
+  margin-top: 260px;
+  right: 420px;
+}
+
+/* Mise en place de la bannière */
+.banner {
+  opacity: 1;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container img {
+  position: sticky;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: float 4s ease-in-out infinite;
+  top: 30% !important;
+  left: 25% !important;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 768px) {
+  .story h2::after,
+  #studio h2::before,
+  #studio h2::after,
+  .story__article::after,
+  .orchidoscar,
+  .Sunfloweroscar,
+  ul::after {
+    display: none !important;
+  }
+  .background-video {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .container img {
+    position: sticky !important;
+    top: 15% !important;
+    z-index: 2;
+  }
+  section.banner {
+    min-height: 300px;
+    height: 0;
+  }
+  .story__article {
+    height: 300px;
+    background-color: transparent;
+    width: 100%;
+  }
+  .story #place {
+    width: 100%;
+    bottom: 150px;
+    position: relative;
+  }
+  .story #place > div {
+    top: 50px;
+    position: relative;
+    right: 25px;
+    margin: auto;
+  }
+  section#studio {
+    top: -11em;
+    height: 450px;
+  }
+  section#studio > div {
+    width: 90%;
+  }
+  #oscar {
+    margin-top: 0px;
+  }
+  div.formoscar {
+    display: block;
+    width: 100%;
+  }
+  section#oscar {
+    margin-top: 0px;
+  }
+  div.nomination {
+    display: flex;
+    flex-direction: column;
+  }
+  p.text {
+    top: 90px;
+    width: 100%;
+    font-size: 20px;
+    right: 56px;
+    position: relative;
+  }
+  .background-video {
+    display: none;
+  }
+  .site-footer ul {
+    display: contents !important;
+  }
+  .affiche {
+    height: 15%;
+    width: 100%;
+  }
+}
+@media (width: 768px) {
+  div.nomination {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  p.text {
+    top: 50px;
+    font-size: 22px;
+    position: relative;
+    width: 60%;
+    left: 100px;
+  }
+  div.affiche {
+    position: relative;
+    height: 60%;
+    width: 280px;
+    left: 30%;
+    top: 10%;
+  }
+  section#oscar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    top: 780px;
+    position: relative;
+  }
+  .story__article {
+    height: 300px;
+    width: 100%;
+  }
+  .story__article > p {
+    width: 80%;
+  }
+  #place.story {
+    bottom: 90px;
+  }
+  section#studio {
+    height: 450px;
+    top: 1100px;
+  }
+  .story {
+    height: 380px;
+  }
+  .swiper-horizontal {
+    width: 100%;
+    height: 350px;
+  }
+  .site-footer {
+    top: 800px;
+  }
+  .story h2::after,
+  #studio h2::before,
+  #studio h2::after,
+  .story__article::after,
+  .orchidoscar,
+  .Sunfloweroscar {
+    display: none !important;
+  }
+  .story#characters {
+    bottom: 130px;
+    position: relative;
+  }
+  .story#place {
+    min-height: 500px;
+    width: 100%;
+    bottom: 60%;
+    position: relative;
+  }
+}
+@media (min-width: 768px) {
+  h2 {
+    background-color: transparent;
+  }
+  .story__article {
+    background-color: transparent;
+  }
+}
+@media (max-width: 425px) {
+  .affiche {
+    position: absolute;
+    left: 75px;
+  }
+}/*# sourceMappingURL=style.css.map */

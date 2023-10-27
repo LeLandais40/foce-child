@@ -62,9 +62,7 @@ html, body {
 	 display: flex !important;
 	 flex-wrap: nowrap !important;
 }
- 
   </style>
-
   <script>
   var swiper = new Swiper('.mySwiper', {
     // Vos options Swiper ici

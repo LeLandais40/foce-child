@@ -27,9 +27,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-    
 
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>

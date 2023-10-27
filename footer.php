@@ -26,50 +26,41 @@
 </html>
 
 <style>
-
 .site-footer {
-  position: relative;
-  display: flex;
-  padding-top: 18em;
-  padding-bottom: 1em;
-  overflow: hidden;
+	 position: relative;
+	 display: flex;
+	 padding-top: 18em;
+	 padding-bottom: 1em;
+	 overflow: hidden;
 }
-
-.site-footer ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  width: 100%;
-  list-style-type: none;
+ .site-footer ul {
+	 padding: 0;
+	 margin: 0;
+	 display: flex;
+	 width: 100%;
+	 list-style-type: none;
 }
-
-.site-footer ul li {
-  flex: 1;
-  text-align: center;
+ .site-footer ul li {
+	 flex: 1;
+	 text-align: center;
 }
-
-.site-footer ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 1em;
-  text-shadow: none;
-  transition: none;
+ .site-footer ul li a {
+	 text-decoration: none;
+	 color: black;
+	 font-size: 1em;
+	 text-shadow: none;
+	 transition: none;
 }
-
-.site-footer-image {
-  position: absolute;
-  left: calc(50% - 323px);
-  bottom: -28.5em;
-  z-index: -1;
+ .site-footer-image {
+	 position: absolute;
+	 left: calc(50% - 323px);
+	 bottom: -28.5em;
+	 z-index: -1;
 }
-
-.site-footer-image::after {
-  content: url("./assets/images/hibiscus_footer.png");
+ .site-footer-image::after {
+	 content: url("./assets/images/hibiscus_footer.png");
 }
-
-
-.site-footer::before,
-.site-footer::after {
-  display: none;
+ .site-footer::before, .site-footer::after {
+	 display: none;
 }
 </style>
