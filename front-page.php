@@ -13,7 +13,7 @@ get_header();
     </div>
     </section>
     <section id="story" class="story">
-    <h2><span class="word animatedFadeInUp fadeInUp one">L'histoire</span></h2>
+    <h2><span class="titre word animatedFadeInUp fadeInUp one">L'histoire</span></h2>
         <article class="story__article">
             <p><?php echo get_theme_mod('story'); ?></p>
         </article>

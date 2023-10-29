@@ -144,19 +144,15 @@
 	 justify-content: space-around;
 	 padding-top: 250px;
 }
- 
 a.orchide {
   href: #story;
 }
-
 a.perso {
   href: #characters;
 }
-
 a.place {
   href: #place;
 }
-
 a.hibiscus {
   href: #studio;
 }
@@ -256,79 +252,65 @@ a.hibiscus {
   .titresite {
     font-size: 20px;
   }
-
   h2 , h3 {
 	display: flex;
 	justify-content: center;
 	background-color: transparent;
 	font-size: 25px;
   }
-
   .sidenav a {
 	font-size: 20px;
 }
-
   a#closeBtn {
     width: 25%;
     text-align: center;
   }
-
   a#openBtn {
     width: 15%;
     margin: 0 auto;
   }
-
   .logomenu {
 	width: 30%;
 	bottom: 50px;
 	position: relative;
   }
-
   ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
   }
-
   li {
 	width: 100%;
 	margin-bottom: 10px;
   }
-
   img {
 	max-width: 100%;
   }
-
   a {
 	font-size: 20px;
   }
-
   a.orchide {
 	position: absolute;
 	right:10px;
 	font-size: 50px;
   }
-
   a.perso {
 	position: relative;
 	right: 55px;
 	font-size: 50px;
 	top: 20px;
   }
-
   a.place {
 	position: relative;
 	right: 90px;
 	font-size: 50px;
   }
-
   a.studio {
 	position: relative;
 	right: 10px;
 	font-size: 50px;
   }
-
   .titlemenu {
 	text-align: center;
   }
